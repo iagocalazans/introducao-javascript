@@ -125,6 +125,10 @@ button[disabled=disabled], button:disabled {
 
 }
 
+.bto-alert {
+    background-color: #ff0000;
+}
+
 .adicionar-paciente{
     margin-top: 30px;
 }
