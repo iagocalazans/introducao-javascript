@@ -3,6 +3,7 @@ class Paciente {
     altura;
     peso;
     imc;
+    imcMedio = 21.7;
     pesoIdeal;
     tr;
     clear = true;
@@ -11,8 +12,8 @@ class Paciente {
         this.nome = this.getData("nome");
         this.altura = this.getData("altura");
         this.peso = this.getData("peso");
-        this.imc = this.calculaImc(this.peso,this.altura,4);
-        this.pesoIdeal = this.calculaPesoIdeal(this.altura,2);
+        this.imc = this.calculaImc(this.peso,this.altura,1);
+        this.pesoIdeal = this.calculaPesoIdeal(this.altura,0);
     }
 
     executa() {
@@ -53,7 +54,7 @@ class Paciente {
     }
 
     calculaPesoIdeal(altura,size) {
-        var ideal = 21.7 * (altura*altura);
+        var ideal = this.imcMedio * (altura*altura);
         return ideal.toFixed(size);
     }
 
