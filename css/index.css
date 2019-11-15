@@ -109,7 +109,7 @@ button{
 	border-color: #04324c;
 	width: 20%;
     display: block;
-    clear: both;
+    float: left;
     margin: 10px 0px;
 
 }
@@ -127,6 +127,7 @@ button[disabled=disabled], button:disabled {
 
 .bto-alert {
     background-color: #ff0000;
+    float: right;
 }
 
 .adicionar-paciente{
