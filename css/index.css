@@ -9,7 +9,7 @@ body{
 
 header{
 	background-color: #333;
-	height: 3em;
+	height: 5em;
 	color: #FFF;
 	margin-bottom: 1em;
 }
@@ -20,7 +20,7 @@ header h1{
 	vertical-align:	middle;
 }
 header h2{
-	font-size: 2em;
+	font-size: 2.5em;
 	display:inline-block;
 	vertical-align:	middle;
 }
@@ -39,12 +39,12 @@ header .container:before{
 }
 
 section{
-	margin: 2em 0;
+	margin: 3em auto !important;
 	overflow: hidden;
 }
 
 section h2{
-	font-size: 3em;
+	font-size: 2em;
 	display: block;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
@@ -127,7 +127,9 @@ button[disabled=disabled], button:disabled {
 
 .bto-alert {
     background-color: #ff0000;
+    border-color: #881111;
     float: right;
+    width: 30%;
 }
 
 .adicionar-paciente{

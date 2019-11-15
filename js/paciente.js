@@ -1,4 +1,12 @@
 class Paciente {
+    nome;
+    altura;
+    peso;
+    imc;
+    pesoIdeal;
+    tr;
+    clear = true;
+
     constructor() {
         this.nome = this.getData("nome");
         this.altura = this.getData("altura");
@@ -18,8 +26,6 @@ class Paciente {
 
         var tabelaPaciente = document.querySelector("#tabela-pacientes");
         tabelaPaciente.appendChild(this.tr);
-
-        this.clear = true;
 
         this.valida(this.peso,0,600,"Peso inválido!");
         this.valida(this.altura,0.5,3,"Altura Inválida!");
